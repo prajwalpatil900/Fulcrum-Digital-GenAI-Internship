@@ -1,0 +1,44 @@
+{
+  "prompts": {
+    "customer_support_rag": {
+      "v1.0": {
+        "version": "v1.0",
+        "template": "Answer the user question: {question} using context: {context}",
+        "author": "Intern",
+        "description": "Basic prompt baseline",
+        "registered_at": "2026-07-20 08:53:33"
+      },
+      "v1.1": {
+        "version": "v1.1",
+        "template": "You are a support agent.\nExample Question: How to reset password? -> Answer: Click reset on login screen.\n\nContext: {context}\nQuestion: {question}\nAnswer:",
+        "author": "Intern",
+        "description": "Added few-shot example",
+        "registered_at": "2026-07-20 08:53:33"
+      },
+      "v1.2": {
+        "version": "v1.2",
+        "template": "You are a senior support agent. Think step by step before answering.\nStep 1: Check context for exact facts.\nStep 2: Formulate concise response.\n\nContext: {context}\nQuestion: {question}",
+        "author": "Senior Dev",
+        "description": "Chain-of-thought reasoning prompt",
+        "registered_at": "2026-07-20 08:53:33"
+      },
+      "v2.0": {
+        "version": "v2.0",
+        "template": "Respond strictly in valid JSON object format with keys 'answer' and 'confidence_score'.\n\nContext: {context}\nQuestion: {question}",
+        "author": "Lead Architect",
+        "description": "Strict JSON schema response format",
+        "registered_at": "2026-07-20 08:53:33"
+      },
+      "v2.1": {
+        "version": "v2.1",
+        "template": "[OVER-RESTRICTIVE REGRESSION VERSION] Reply in single word only. No explanations allowed.\n\nContext: {context}\nQuestion: {question}",
+        "author": "Junior Dev",
+        "description": "Experimental over-restrictive single word prompt",
+        "registered_at": "2026-07-20 08:53:33"
+      }
+    }
+  },
+  "active_versions": {
+    "customer_support_rag": "v1.2"
+  }
+}

@@ -1,0 +1,23 @@
+# Environment Secrets
+.env
+Month-2/.env
+*.env
+
+# Python Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+
+# Python Cache & Bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# Experiment logs
+mlruns/
+mlflow.db
+sqlite.db
+employee_database.db
